@@ -42,7 +42,7 @@ First on windows you can download rails [here](http://railsinstaller.org/en) whi
 
 	rails --version
 
-:warning: On Windows, you might have error [#72](https://github.com/railsinstaller/railsinstaller-windows/issues/72)  with rails, so you might need to overwrite the `rails.bat` file with one in here from [#72](https://github.com/railsinstaller/railsinstaller-windows/issues/72). Then you can create a new webiste
+:warning: On Windows, you might have error [#72](https://github.com/railsinstaller/railsinstaller-windows/issues/72)  with rails, so you might need to overwrite the `rails.bat` file with one in here from [#72](https://github.com/railsinstaller/railsinstaller-windows/issues/72). Then you can create a new webiste (will be created in the current directory).
 
 	rails new website
 
@@ -57,7 +57,7 @@ Then in the folder, run this command, you'll be able to access the website at [h
 	
 	rails server
 
-
+If you run into a [ExecJS::ProgramError](https://github.com/Sylhare/Ruby/issues/1) try one of the solution proposed here [#1](https://github.com/Sylhare/Ruby/issues/1).
 
 ## Sources
 
