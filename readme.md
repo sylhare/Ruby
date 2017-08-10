@@ -22,7 +22,7 @@ If you have a ruby program (with a `.rb`) you can launch from the prompt, here a
 
 	ruby HelloWorld.rb
 
-## Getting Rubygems
+## Getting ruby gems
 
 RubyGems is a package management framework for Ruby. You can download it from [here](https://rubygems.org/pages/download).
 Once it's installed, you can check with:
@@ -32,7 +32,6 @@ Once it's installed, you can check with:
 It can be used to download packages, for example rails:
 
 	gem install rails
-
 
 ## Getting on rails
 
@@ -57,7 +56,7 @@ Then in the folder, run this command, you'll be able to access the website at [h
 	
 	rails server
 
-If you run into a [ExecJS::ProgramError](https://github.com/Sylhare/Ruby/issues/1) try one of the solution proposed here [#1](https://github.com/Sylhare/Ruby/issues/1).
+:warning: If you run into a [ExecJS::ProgramError](https://github.com/Sylhare/Ruby/issues/1) try one of the solution proposed here [#1](https://github.com/Sylhare/Ruby/issues/1).
 
 ## Sources
 
@@ -72,3 +71,9 @@ Here are some sources and links that relates to Ruby and Ruby on Rails.
 - [Getting started](http://guides.rubyonrails.org/getting_started.html)	
 - [Begin with rails](https://www.railstutorial.org/book/beginning)
 - [Windows railsinstaller git](https://github.com/railsinstaller/railsinstaller-windows)
+
+### Vocabulary
+
+Some definition:
+
+- CRUD : **C**reate, **R**ead, **U**pdate and **D**estroy. Model followed by Ruby on Rails applications.
