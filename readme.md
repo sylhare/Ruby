@@ -68,9 +68,14 @@ Here are some sources and links that relates to Ruby and Ruby on Rails.
 - [Ruby Course](https://pine.fm/LearnToProgram/chap_00.html)
 
 ### Ruby on Rails
+#### RoR - Introduction
 - [Getting started](http://guides.rubyonrails.org/getting_started.html)	
 - [Begin with rails](https://www.railstutorial.org/book/beginning)
 - [Windows railsinstaller git](https://github.com/railsinstaller/railsinstaller-windows)
+
+#### RoR - Authentification
+- [authlogic](https://github.com/binarylogic/authlogic)
+- [devise](https://github.com/plataformatec/devise)
 
 ### Vocabulary
 
