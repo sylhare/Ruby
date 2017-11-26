@@ -1,10 +1,12 @@
-# Ruby and Ruby on rails
+# Ruby
 
-Ruby on Rails is a web framework that has been written in the Ruby programming language. So here are some example.
+[Ruby](https://www.ruby-lang.org/fr/) est un langage de programmation libre. Il est interprété, orienté objet et multi-paradigme. 
+
+Check this article on [railsapps](http://railsapps.github.io/installrubyonrails-ubuntu.html) to get you started on Linux
 
 ## Getting started with Ruby
 
-Install Ruby from the [ruby website](https://www.ruby-lang.org/en/documentation/installation/). You have multiple installer for Windows or you can use the command line for UNIX (here for Debian, Ubuntu):
+Install Ruby from [ruby-lang.org](https://www.ruby-lang.org/en/documentation/installation/). You have multiple installer for Windows or you can use the command line for UNIX (here for Debian, Ubuntu):
 
 	sudo apt-get install ruby-full
 
@@ -19,40 +21,48 @@ If it's properly installed, it should return the version. Now you may want to st
 Then you can start typing some ruby (like a python prompt). You can quit the IRB by typing `exit`.
 
 If you have a ruby program (with a `.rb`) you can launch from the prompt, here an example with the `HelloWorld.rb` program:
-
+```ruby
 	ruby HelloWorld.rb
+```
 
 ## Getting RubyGems
 
 RubyGems is a package management framework for Ruby. You can download it from [rubygems.org](https://rubygems.org/pages/download).
 Once it's installed, you can check with:
-
+```ruby
 	gem --version
+```
 
 It can be used to download packages (also called gems), for example rails:
-
+```ruby
 	gem install rails
+```
 	
 Gems works with a `.gemspec` file which containes the specification of the gem (name, author, version, ...). To build a gem use:
-
+```ruby
 	gem build my-gem.gemspec
+```
 	
 You can unpack a gem (to see what's inside) with:
-
+```ruby
 	gem unpack my-gem-0.1.1.gem 
+```
 	
 To update your gem online at [RubyGem](https://rubygems.org/gems), you will need first an account then you can use:
-
+```ruby
 	# Push the gem online
 	gem push my-gem-0.1.1.gem  
 	# Delete the gem online
 	gem yank my-gem-0.1.1.gem 
+```
 	
 ## Getting rvm
 
 RVM can be use for ruby development. You can download it from [rvm.io](https://rvm.io/rvm/install)
 
 ## Getting on rails
+
+Ruby on Rails is a web framework that has been written in the Ruby programming language. So here are some example.
 
 Everything is well documented on [RoR getting started](http://guides.rubyonrails.org/getting_started.html). But I've added some extra things that bugged me.
 
