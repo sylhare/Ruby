@@ -24,7 +24,7 @@ If you have a ruby program (with a `.rb`) you can launch from the prompt, here a
 
 ## Getting RubyGems
 
-RubyGems is a package management framework for Ruby. You can download it from [here](https://rubygems.org/pages/download).
+RubyGems is a package management framework for Ruby. You can download it from [rubygems.org](https://rubygems.org/pages/download).
 Once it's installed, you can check with:
 
 	gem --version
@@ -41,7 +41,7 @@ You can unpack a gem (to see what's inside) with:
 
 	gem unpack my-gem-0.1.1.gem 
 	
-To update your gem online at RubyGem, you will need first an account then you can use:
+To update your gem online at [RubyGem](https://rubygems.org/gems), you will need first an account then you can use:
 
 	# Push the gem online
 	gem push my-gem-0.1.1.gem  
