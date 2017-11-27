@@ -22,22 +22,41 @@ If you have a ruby program (with a `.rb`) you can launch from the prompt, here a
 
 	ruby HelloWorld.rb
 
-## Getting ruby gems
+## Getting RubyGems
 
 RubyGems is a package management framework for Ruby. You can download it from [here](https://rubygems.org/pages/download).
 Once it's installed, you can check with:
 
 	gem --version
 
-It can be used to download packages, for example rails:
+It can be used to download packages (also called gems), for example rails:
 
 	gem install rails
+	
+Gems works with a `.gemspec` file which containes the specification of the gem (name, author, version, ...). To build a gem use:
+
+	gem build my-gem.gemspec
+	
+You can unpack a gem (to see what's inside) with:
+
+	gem unpack my-gem-0.1.1.gem 
+	
+To update your gem online at RubyGem, you will need first an account then you can use:
+
+	# Push the gem online
+	gem push my-gem-0.1.1.gem  
+	# Delete the gem online
+	gem yank my-gem-0.1.1.gem 
+	
+## Getting rvm
+
+RVM can be use for ruby development. You can download it from [rvm.io](https://rvm.io/rvm/install)
 
 ## Getting on rails
 
-Everything is well documented [here](http://guides.rubyonrails.org/getting_started.html). But I've added some extra things that bugged me.
+Everything is well documented on [RoR getting started](http://guides.rubyonrails.org/getting_started.html). But I've added some extra things that bugged me.
 
-First on windows you can download rails [here](http://railsinstaller.org/en) which would also install SQLite3.
+First on windows you can download [rails installer](http://railsinstaller.org/en) which would also install SQLite3.
 
 	rails --version
 
@@ -57,6 +76,7 @@ Then in the folder, run this command, you'll be able to access the website at [h
 	rails server
 
 :warning: If you run into a [ExecJS::ProgramError](https://github.com/Sylhare/Ruby/issues/1) try one of the solution proposed here [#1](https://github.com/Sylhare/Ruby/issues/1).
+
 
 ## Sources
 
@@ -82,3 +102,6 @@ Here are some sources and links that relates to Ruby and Ruby on Rails.
 Some definition:
 
 - CRUD : **C**reate, **R**ead, **U**pdate and **D**estroy. Model followed by Ruby on Rails applications.
+- RubyGems : is a package manager for the Ruby programming language that provides a tool designed to easily manage the installation of gems, and a server for distributing them.
+- Gem : A standard self-contained format for distributing Ruby programs and libraries. The gem command is used to build, upload, download, and install Gem packages.
+- rvm : RVM is a command-line tool which allows you to easily install, manage, and work with multiple ruby environments from interpreters to sets of gems.
