@@ -1,4 +1,5 @@
 #!/usr/bin/ruby -w
+
 =begin
 Simple program to print Hello World! on the console
 It can be started with this command:
