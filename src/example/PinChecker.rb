@@ -1,6 +1,5 @@
 # Created by Tamra
 
-#Coded by: Tamra
 #A PIN-guessing program, that focuses on common values and patterns first, then brute-forces the remaining values. Also evaluates the safety of a PIN against an algorithm and person.
 #I'll be adding more pattern recognitions later!
 

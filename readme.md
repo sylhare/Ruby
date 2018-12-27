@@ -97,6 +97,10 @@ Here are some sources and links that relates to Ruby and Ruby on Rails.
 - [Interactive Tutorial](http://tryruby.org/levels/1/challenges/1)
 - [Ruby Course](https://pine.fm/LearnToProgram/chap_00.html)
 
+### Encryption
+
+- [Gibberish](https://github.com/mdp/gibberish)
+
 ### Ruby on Rails
 #### RoR - Introduction
 - [Getting started](http://guides.rubyonrails.org/getting_started.html)	
