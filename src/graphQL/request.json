@@ -1,13 +1,14 @@
 {
-    person(id: "1") {
-        firstName
-        email
-        lastName
-        username
-        friends {
-            firstName
-            email
-        }
+  person(id: "1"
+  ) {
+  firstName
+  email
+  lastName
+  username
+  friends {
+  firstName
+  email
+}
 
-    }
+}
 }

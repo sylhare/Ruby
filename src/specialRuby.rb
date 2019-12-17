@@ -11,14 +11,14 @@ I guess it can be more readable without it.
 In this example, it will print b: 10
 =end
 unless a < b
-    puts a
+  puts a
 else
-    puts b
+  puts b
 end
 
 #Normal if, it will print a: 1
 if a < b
-    puts a
-else    
-    puts b
+  puts a
+else
+  puts b
 end

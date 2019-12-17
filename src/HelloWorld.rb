@@ -9,7 +9,7 @@ HelloWorld.rb
 =end
 
 def hello
-  	return "Hello World!"
+  return "Hello World!"
 end
 
 puts hello
