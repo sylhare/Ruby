@@ -8,4 +8,5 @@ RUN gem install bundler
 
 EXPOSE 4000
 
-CMD ["jekyll", "--help"]
+CMD ["/bin/sh"]
+ENTRYPOINT ["/bin/sh"]
