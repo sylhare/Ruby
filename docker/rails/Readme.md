@@ -2,6 +2,10 @@
 
 More information on [Get Ruby on rails in a Docker](https://docs.docker.com/compose/rails)
 
+### Build the app
+
+You can create a simple new app or just re-use the `/blog` one which is also a template.
+
 ### Build the docker
 You'll need to create a Dockerfile and a docker-compose.yml. Then you will need to create a simple Gemfile with:
 
@@ -30,6 +34,7 @@ sudo chown -R $USER:$USER /path/to/dir
 ```
 
 Now that you’ve got a new Gemfile, you need to build the image again.
+
 	docker-compose build
 
 ### Get the application started
@@ -54,19 +59,28 @@ test:
   database: myapp_test
 ```
 
-Boot the app with
+Boot the app with:
+
 	docker-compose up
 
 And create in another terminal the database with:
+
 	docker-compose run web rake db:create
 
-Now the Ruby on rails web page should be displayed at [http://localhost:3000](http://localhost:3000). If you are using Docker Machine, then docker-machine ip MACHINE_VM returns the Docker host IP address, to which you can append the port (<Docker-Host-IP>:3000).
+> Now the Ruby on rails web page should be displayed at [http://localhost:3000](http://localhost:3000). 
 
-Stop the application
+If you are using Docker Machine, then docker-machine ip `MACHINE_VM` returns the Docker host IP address, to which you can append the port `<Docker-Host-IP>:3000`.
+
+Stop the application:
+
 	docker-compose down
 
 ### Rebuild the application
 
-If you make changes to the Gemfile or the Compose file to try out some different configurations, you will need to rebuild. Some changes will require only docker-compose up --build, but a full rebuild requires a re-run of docker-compose run web bundle install to sync changes in the Gemfile.lock to the host, followed by docker-compose up --build.
+If you make changes to the Gemfile or the Compose file to try out some different configurations, 
+you will need to rebuild. 
+
+Some changes will require only `docker-compose up --build`, but a full rebuild requires a re-run of docker-compose run web bundle install to sync changes in the `Gemfile.lock` to the host, 
+followed by `docker-compose up --build`.
 
 
