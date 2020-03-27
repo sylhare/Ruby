@@ -12,6 +12,7 @@ ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US.UTF-8
 
 RUN gem install --no-user-install jekyll bundler html-proofer
+RUN gem install --no-user-install jekyll-paginate jekyll-feed jekyll-seo-tag
 RUN gem update --system
 
 CMD ["/bin/bash"]
