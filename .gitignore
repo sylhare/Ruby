@@ -50,3 +50,4 @@ Temporary Items
 *.iml
 jekyll/jekyll-theme.gemspec.save
 *.gem
+*.lock
