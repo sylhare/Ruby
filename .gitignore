@@ -47,5 +47,6 @@ Network Trash Folder
 Temporary Items
 .apdisk
 /.idea/
-Ruby.iml
+*.iml
 jekyll/jekyll-theme.gemspec.save
+*.gem
