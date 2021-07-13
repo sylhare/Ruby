@@ -34,4 +34,7 @@ jobs:
       - name: Install deps
         run: cd hola && bundle install
       - name: Run tests
-        run: rake test
+        run: |
+          echo `ls`
+          cd hola || true
+          rake test

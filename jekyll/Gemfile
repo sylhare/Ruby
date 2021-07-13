@@ -2,3 +2,5 @@
 
 source "https://rubygems.org"
 gemspec
+
+gem 'jekyll-theme-type-on-strap', '~> 9.0'
