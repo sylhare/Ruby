@@ -1,4 +1,4 @@
-FROM ruby:2.6-alpine
+FROM ruby:3.1-alpine
 LABEL maintainer="sylhare"
 
 RUN apk add --no-cache build-base cmake libxml2-dev libxslt-dev libffi-dev autoconf libtool
