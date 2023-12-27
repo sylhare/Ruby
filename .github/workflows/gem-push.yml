@@ -14,11 +14,11 @@ jobs:
       packages: write
 
     steps:
-    - uses: actions/checkout@v2
-    - name: Set up Ruby 2.6
-      uses: actions/setup-ruby@v1
+    - uses: actions/checkout@latest
+    - name: Set up Ruby
+      uses: actions/setup-ruby@latest
       with:
-        ruby-version: 2.6.x
+        ruby-version: 3.2.x
 
     - name: Publish to GPR
       continue-on-error: true
