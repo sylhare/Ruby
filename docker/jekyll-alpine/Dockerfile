@@ -1,5 +1,10 @@
-FROM ruby:3.1-alpine
+FROM ruby:3.4-alpine
 LABEL maintainer="sylhare"
+LABEL org.opencontainers.image.title="Jekyll Alpine"
+LABEL org.opencontainers.image.description="A Docker image for Jekyll based on Alpine Linux"
+LABEL org.opencontainers.image.url="https://github.com/sylhare/Ruby"
+LABEL org.opencontainers.image.source="https://github.com/sylhare/Ruby/tree/master/docker/jekyll-alpine"
+LABEL org.opencontainers.image.licenses="MIT"
 ENV JEKYLL_ROOTLESS=true
 RUN apk add --no-cache \
     libxml2-dev \
@@ -17,8 +22,6 @@ RUN apk add --no-cache \
     bash \
     git
 
-
-RUN gem update --system
 RUN gem install --no-user-install \
     jekyll \
     bundler \
